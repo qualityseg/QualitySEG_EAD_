@@ -57,7 +57,7 @@ export const HeaderPage = ({ subtitle, title }) => {
 
         <div className={styles.carouselImageWrapper}>
           <img
-            srcSet="images/background-2.png"
+            srcSet="images/background-2.jpg"
             sizes={`${carouselHeight}px`}
             className={styles.carouselImage}
             alt="Carousel Image 2"
