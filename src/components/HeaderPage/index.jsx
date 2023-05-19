@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Carousel from 'nuka-carousel';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Importe os estilos do carousel
 import styles from './styles.module.scss';
 
 export const HeaderPage = ({ subtitle, title }) => {
@@ -33,18 +34,16 @@ export const HeaderPage = ({ subtitle, title }) => {
     };
   }, []);
 
-  const customTransition = 'transform 1s ease-in-out';
-
   return (
     <section className={styles.headerPage}>
       <Carousel
         ref={carouselRef}
         className={styles.carousel}
-        autoplay={true}
-        wrapAround={true}
-        autoplayInterval={5000}
-        afterSlide={(slideIndex) => setCurrentSlide(slideIndex)}
-        slideIndex={currentSlide}
+        autoPlay={true}
+        infiniteLoop={true}
+        interval={5000}
+        afterChange={(slideIndex) => setCurrentSlide(slideIndex)}
+        selectedItem={currentSlide}
         style={{ maxHeight: carouselHeight, overflow: 'hidden' }}
       >
         <div className={styles.carouselImageWrapper}>
