@@ -46,7 +46,7 @@ export const HeaderPage = ({ subtitle, title }) => {
         selectedItem={currentSlide}
         style={{ maxHeight: carouselHeight, overflow: 'hidden' }}
       >
-        <div className={styles.carouselImageWrapper}>
+        <div className={`${styles.carouselImageWrapper} ${styles.largeScreenOnly}`}>
           <img
             srcSet="images/background-1.jpg"
             sizes={`${carouselHeight}px`}
