@@ -102,7 +102,7 @@ const Catalogo = () => {
           return (
             <div
               className={`${styles.treatmentsItem} ${isSelected ? styles.selected : ''}`}
-              data-aos="fade-up"
+              
               key={curso.id}
             >
               <div className={styles.images}>
@@ -110,8 +110,8 @@ const Catalogo = () => {
                   src={curso.imageSrc}
                   alt={curso.titulo}
                   className={styles.image}
-                  width={250}
-                  height={137}
+                  width={240}
+                  height={127}
                 />
               </div>
               <h3>{curso.titulo}</h3>
