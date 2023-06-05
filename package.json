@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "npm install --force"
+    "vercel-build": "npm install --force && npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
@@ -24,7 +24,7 @@
     "next": "^13.4.4",
     "nodemailer": "^6.7.2",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "react": "^17.0.2",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-chartist": "0.14.4",
     "react-dom": "^18.0.0",
