@@ -35,7 +35,7 @@ export default function Tratamentos() {
       <main className={`${styles.treatments} mainContainer`}>
 
         <div className={styles.treatmentsItem} data-aos="fade-up">
-        <Link href="https://app.powerbi.com/view?r=eyJrIjoiYjg5OTRlY2ItMjI3Yy00MDQ5LWIzZjYtN2EyZjAzOTVjZTEzIiwidCI6IjBhZDFmNWJiLWU3NGItNDdiYi04YmU5LTBkNGUxYzNlZjljZiJ9">
+        <Link href="https://app.powerbi.com/view?r=eyJrIjoiYjg5OTRlY2ItMjI3Yy00MDQ5LWIzZjYtN2EyZjAzOTVjZTEzIiwidCI6IjBhZDFmNWJiLWU3NGItNDdiYi04YmU5LTBkNGUxYzNlZjljZiJ9" legacyBehavior>
         <a target="_blank">
           <MyImage
             src="/images/controlefrota.jpg"

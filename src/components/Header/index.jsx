@@ -5,6 +5,7 @@ import { Button } from "../Button";
 import * as gtag from "../../lib/gtag";
 import styles from "./styles.module.scss";
 
+
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -38,7 +39,7 @@ export const Header = () => {
       <div className={styles.blackBar}>
         <li className={styles.social}>
         <left>
-          <Link href="https://www.instagram.com/qualitysegconsultoria/">
+          <Link href="https://www.instagram.com/qualitysegconsultoria/" legacyBehavior>
             <a target="_blank">
               <Image
                 src="/icons/instaFooter.svg"
@@ -48,7 +49,7 @@ export const Header = () => {
               />
             </a>
           </Link>
-          <Link href="https://www.facebook.com/QualitySegConsultoriaa">
+          <Link href="https://www.facebook.com/QualitySegConsultoriaa" legacyBehavior>
             <a target="_blank">
               <Image
                 src="/icons/faceFooter.svg"
@@ -62,7 +63,7 @@ export const Header = () => {
         </li>
       </div>
         <div className="mainContainer">
-          <Link href="cursos_ead">
+          <Link href="cursos_ead" legacyBehavior>
             <a>
               <Image
                 src="/icons/logo_transparente.png"
@@ -106,12 +107,12 @@ export const Header = () => {
         >
           <ul>
             <li onClick={closeMenu}>
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a>Home</a>
               </Link>
             </li>
             <li onClick={agendarConsultaMenu}>
-              <Link href="https://wa.me/5514997605773">
+              <Link href="https://wa.me/5514997605773" legacyBehavior>
                 <a target="_blank">Fale com um Consultor</a>
               </Link>
             </li>

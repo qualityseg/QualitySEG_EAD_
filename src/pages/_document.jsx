@@ -5,12 +5,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" legacyBehavior/>
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Zen+Antique&display=swap"
             rel="stylesheet"
+            legacyBehavior
           />
-          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" legacyBehavior/>
 
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

@@ -101,12 +101,12 @@ export default function Contato() {
                 <p>08-12h sáb</p>
               </li>
               <li className={styles.social}>
-                <Link href="https://www.instagram.com/eletrosantaclara ">
+                <Link href="https://www.instagram.com/eletrosantaclara "legacyBehavior>
                   <a target="_blank">
                     <img src="/icons/instaContato.svg" alt="Instagram" />
                   </a>
                 </Link>
-                <Link href="https://www.facebook.com/eletrosantaclara">
+                <Link href="https://www.facebook.com/eletrosantaclara"legacyBehavior>
                   <a target="_blank">
                     <img src="/icons/faceContato.svg" alt="Facebook" />
                   </a>

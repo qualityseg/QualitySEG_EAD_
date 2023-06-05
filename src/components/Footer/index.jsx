@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
+
 export const Footer = ({ children, link = "/" }) => {
   return (
     <>
       <footer className={styles.footer}>
         <div className={`mainContainer ${styles.footerWrap}`}>
-          <Link href="/">
+          <Link href="/" legacyBehavior> 
             <a className={styles.logo}>
               <Image
                 src="/icons/logo_transparente.png"
@@ -26,7 +27,7 @@ export const Footer = ({ children, link = "/" }) => {
               <li>Rua XV de Novembro, 127</li>
               <li>Lençóis Paulista - SP</li>
               <li className={styles.social}>
-                <Link href="https://www.instagram.com/qualitysegconsultoria/">
+                <Link href="https://www.instagram.com/qualitysegconsultoria/" legacyBehavior>
                   <a target="_blank">
                     <Image
                       src="/icons/instaFooter.svg"
@@ -36,7 +37,7 @@ export const Footer = ({ children, link = "/" }) => {
                     />
                   </a>
                 </Link>
-                <Link href="https://www.facebook.com/QualitySegConsultoriaa">
+                <Link href="https://www.facebook.com/QualitySegConsultoriaa" legacyBehavior>
                   <a target="_blank">
                     <Image
                       src="/icons/faceFooter.svg"
@@ -70,7 +71,7 @@ export const Footer = ({ children, link = "/" }) => {
             <h3>Atendimento</h3>
             <p>Seg - Sex: 07:00 - 18:00</p>
             <p>Sáb: até 12h - Dom: Fechado</p>
-            <p><Link href="">
+            <p><Link href="" legacyBehavior>
                   <a target="_blank">
                   Política de Privacidade  
                   </a>
@@ -80,7 +81,7 @@ export const Footer = ({ children, link = "/" }) => {
       </footer>
 
       <p className={`${styles.copy}`}>
-        2023 © QualitySeg Consultoria - Todos os direitos reservados.  <Link href="https://agenciasetfocus.vercel.app/">
+        2023 © QualitySeg Consultoria - Todos os direitos reservados.  <Link href="https://agenciasetfocus.vercel.app/" legacyBehavior>
                   <a target="_blank">
                   Desenvolvido por 
                   </a>
