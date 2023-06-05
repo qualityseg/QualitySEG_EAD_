@@ -1,14 +1,8 @@
 import React, { useState } from 'react';
 import cursosData from './cursos.json';
 import styles from './CursosEad.module.scss';
-import mercadopago from 'mercadopago';
 
 const CursosEad = () => {
-  mercadopago.configure({
-    access_token: 'TEST-2684905602430236-052513-51d07b1caa42a7938ab7e2a9f13a7f98-135153905',
-    integrator_id: 'integrator_id_test',
-  });
-
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState(cursosData);
 
@@ -24,33 +18,6 @@ const CursosEad = () => {
     } else {
       setSearchResults(cursosData);
     }
-  };
-
-  const createPreference = async (curso) => {
-    const preference = {
-      items: [
-        {
-          title: curso.titulo,
-          unit_price: curso.valor,
-          quantity: 1,
-        },
-      ],
-      external_reference: 'suus_external',
-      back_urls: {
-        success: 'http://localhost:3000/sucesso',
-        failure: 'http://localhost:3000/falha',
-        pending: 'http://localhost:3000/pendente',
-      },
-      auto_return: 'approved',
-    };
-
-    const response = await mercadopago.preferences.create(preference);
-    return response.body.init_point;
-  };
-
-  const handleCheckoutClick = async (curso) => {
-    const initPoint = await createPreference(curso);
-    window.open(initPoint, '_blank');
   };
 
   return (
@@ -88,12 +55,13 @@ const CursosEad = () => {
               <p>Carga Horaria: {curso.carga_horaria}</p>
               <p>Valor: {curso.valor}</p>
               <center>
-                <button
-                  className={styles.learnMoreButton}
-                  onClick={() => handleCheckoutClick(curso)}
-                >
-                  Clique e saiba mais
-                </button>
+              <button
+                className={styles.learnMoreButton}
+                onClick={() => window.open('https://forms.zohopublic.com/esocial/form/ServiceOrderForm/formperma/Q9ZdGBC2hH8LNYuxJdLQFgZ8hbLqbwu-MCLzsJ2biUY', '_blank')}
+              >
+                Clique e saiba mais
+              </button>
+
               </center>
             </div>
           </div>

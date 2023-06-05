@@ -20,9 +20,6 @@ export default function Tratamentos() {
    
       <Header/>
 
-      <HeaderPage>
-
-      </HeaderPage>
     
       <CursosEad/>
 

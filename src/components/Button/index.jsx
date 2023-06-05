@@ -5,13 +5,13 @@ export const Button = ({ children, link = "/", dark = false, ...props }) => {
   return (
     <>
       {!dark ? (
-        <Link href={link}>
+        <Link legacyBehavior href={link}>
           <a className={styles.button} target="_blank" {...props}>
             {children}
           </a>
         </Link>
       ) : (
-        <Link href={link}>
+        <Link legacyBehavior href={link}>
           <a
             className={`${styles.button} ${styles.buttonDark}`}
             target="_blank"
