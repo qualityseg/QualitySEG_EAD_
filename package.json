@@ -26,7 +26,7 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-chartist": "0.14.4",
+    "react-chartist": "0.14.5",
     "react-dom": "^18.0.0",
     "react-notification-alert": "0.0.13",
     "react-responsive-carousel": "^3.2.23",
