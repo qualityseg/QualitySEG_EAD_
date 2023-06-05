@@ -1,3 +1,4 @@
+
 .floatingButton {
   position: fixed;
   bottom: 20px;
@@ -5,20 +6,20 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #1A6F45;
+  background-color: #01A982;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 16px;
-  border: 2px solid #1A6F45;
+  border: 2px solid #01A982;
   box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
   outline: none;
   transition: background-color 0.3s ease;
   cursor: pointer;
 
   &.selected {
-    border-color: #1A6F45;
+    border-color: #01A982;
     box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
   }
 
@@ -55,19 +56,19 @@
   }
 }
 .floatingButton.selected {
-  border: 2px solid #1A6F45;
+  border: 2px solid #01A982;
   box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
 }
 .primary {
-  background-color: #1A6F45;
-  border-color: #1A6F45;
+  background-color: #01A982;
+  border-color: #01A982;
   color: #fff;
 
   &:hover,
   &:focus,
   &:active {
-    background-color: #135135;
-    border-color: #135135;
+    background-color: #01A982;
+    border-color: #01A982;
     color: #fff;
   }
 }
@@ -115,20 +116,20 @@
   margin: 50px;
 }
 
-.treatmentsContainer {
+.container {
   display: flex;
-  justify-content: center; /* Centraliza os resultados horizontalmente */
-  margin: 50px; /* Adiciona espaçamento de 50px nas laterais */
-
+  justify-content: center;
 }
 
 .treatments {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(5, 235px);
+  gap: 15px;
   width: 100%;
- 
+  justify-content: center; /* Adicione esta linha */
+
+
   .treatmentsItem {
     background-color: none;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
@@ -140,11 +141,11 @@
     padding-bottom: 10px;
     transition: transform 0.3s ease;
     width: 240px; /* Adicione essa linha para definir a largura */
-    height: 500px; /* Ajuste a altura conforme necessário */
-
+    height: 450px; /* Ajuste a altura conforme necessário */
+    border-radius: 15px;
  
   h3 {
-    margin-top: 62px;
+    margin-top: 15px;
     margin-bottom: 32px;
     font-family: "IBM Plex Sans Hebrew", Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
@@ -167,10 +168,14 @@
   overflow-y: auto;
   padding: 0 1rem;
   color: var(--blue-black);
+  margin-top: 200px;
   margin-bottom: 15px;
+  padding-top: 5px;
   background-color: #f5f5f5;
- 
+  position: absolute;
+  
   p {
+    
   font-size: 11px;
   line-height: 1.5;
  
@@ -192,7 +197,7 @@
   }
   .customSelectedButton {
     outline: none;
-    border: 2px solid #1A6F45;
+    border: 2px solid #01A982;
     box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
   }
   
@@ -222,14 +227,11 @@
   }
   .selectedButton {
     outline: none;
-    border: 2px solid #1A6F45;
+    border: 2px solid #01A982;
     box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
   }
   
-  .floatingButton {
-    outline: none;
-    border: none;
-  }
+
     
   .quantityOption {
     margin-top: 15px;
@@ -247,7 +249,7 @@
     border-radius: 15px;
     
     &.selected {
-      border-color: #1A6F45;
+      border-color: #01A982;
       box-shadow: 0 0 0 4px rgba(26, 111, 69, 0.3);
     }
   }
@@ -257,22 +259,9 @@
   }
   
  
-.imagesContainer {
-  position: absolute;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--s24);
-  margin-top: var(--s64);
-  color: var(--blue-black);
-
-  .images {
-    background-size: 360px 196px;
-    background-position: center;
-  }
-}
 
 
-@media (max-width: 850px) {
+@media (max-width: 100px) {
   .treatments {
     grid-template-columns: 1fr;
 
@@ -286,7 +275,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
   .imagesContainer {
     grid-template-columns: 1fr;
   }

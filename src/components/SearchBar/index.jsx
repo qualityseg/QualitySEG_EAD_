@@ -132,7 +132,7 @@ const Catalogo = () => {
                 className={`${styles.courseButton} ${
                   isSelected ? `${styles.danger} ${styles.selectedButton}` : styles.primary
                 }`}
-                style={{ backgroundColor: '#1A6F45' }}
+                style={{ backgroundColor: '#01A982' }}
                 onClick={(e) => handleCourseSelection(e, curso)}
               >
                 {isSelected ? 'Remover curso' : (
